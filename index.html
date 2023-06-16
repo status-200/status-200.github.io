@@ -6,15 +6,29 @@
     <meta name="description" content="People. Product. Technology. Helping New Zealand businesses become global successes." />
     <meta name="keywords" content="people, product, technology, new zealand" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            dropShadow: {
+              'xl': '0 0px 12px rgba(0, 255, 51, 0.50)',
+              '2xl': '0 0px 12px rgba(0, 255, 51, 0.90)',
+            },
+
+          },
+        },
+      }
+    </script>
   </head>
   <body class="bg-slate-900">
 
     <div class="flex flex-col items-center justify-center h-screen">
-      <h1 class="flex text-slate-300 text-5xl font-semibold">
+      <h1 class="flex text-slate-300 text-5xl font-semibold drop-shadow-xl">
         People. Product. Technology.
       </h1>
-      <div class="flex block mt-6">
-        <img src="status200.png" alt="HTTP/1.1 200 OK">
+      <div class="flex block mt-10 font-mono text-slate-300 tracking-wider text-2xl drop-shadow-2xl">
+        HTTP/1.1 200 OK
+        <!-- <img src="status200.png" alt="HTTP/1.1 200 OK"> -->
       </div>
     </div>
   </body>
